@@ -30,22 +30,23 @@ body {
   flex-direction: column;
   margin: 120px auto 0 auto;
   max-width: 500px;
+  width: 100%;
   padding: 2rem;
-  background-color:rgba(230, 230, 16, 0.884) ;
+  background-color: rgba(230, 230, 16, 0.884);
   border-radius: 12px;
   box-shadow: 6px 6px 10px 1px rgba(0, 0, 0, 0.15);
 }
 /* #dc3545   #e3edf7*/
-.stats_container{
+.stats_container {
   padding: 30px;
   border-radius: 20px;
   border: 2px solid var(--purple);
   display: flex;
   justify-content: space-between;
-  gap: 50px;
+  gap: 30px;
   width: 100%;
+  flex-wrap: wrap;
 }
-
 h1 {
   text-align: center;
   margin-bottom: 2rem;
@@ -178,17 +179,17 @@ li.completed .task-text {
   border-radius: 10px;
   transition: all 0.3s ease;
 }
-#numbers{
-  width: 200px;
-  height: 100px;
+#numbers {
+  width: 150px;
+  height: 80px;
   background-color: var(--purple);
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  font-size: 30px;
-  font-weight:bold ;
-  
+  font-size: 2rem;
+  font-weight: bold;
+  flex-shrink: 0;
 }
 form{
   width: 100%;
@@ -197,51 +198,51 @@ form{
   gap: 10px;
 }
 
+/* Base Styles */
 
-@media (max-width: 778px){
-  .container{
-    height: 90%;
-    width: 90%;
-  }
-}
-@media (max-width: 600px){
-  .container{
-    height: 90%;
-    width: 90%;
-  }
- 
-}
 
-@media (max-width: 551px){
-  .container{
-    height: 90%;
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .container {
     width: 90%;
+    height: auto;
+    padding: 1.5rem;
   }
-  .numbers{
+
+  .stats_container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  #numbers {
+    width: 100px;
+    height: 60px;
+    font-size: 1.2rem;
+    border-radius: 20px;
+  }
+
+  form {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  input[type="text"] {
     width: 100%;
   }
-}
 
-
-@media (max-width: 400px){
-  .container{
-    height: 90%;
-    width: 90%;
-  }
-
-  .stats_container{
+  button {
     width: 100%;
+    border-radius: 8px;
+    font-size: 1.5rem;
   }
- h1{
-  font-family: sans-serif;
-  font-size: small;
- }
-} 
 
-@media (max-width: 397px){
-  .container{
-    height: 90%;
-    width: 90%;
+  h1 {
+    font-size: 1.2rem;
+    text-align: center;
   }
- 
-} 
+}
