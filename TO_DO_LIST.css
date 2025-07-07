@@ -226,7 +226,7 @@ form{
     border-radius: 20px;
   }
 
-  /* form {
+  form {
     flex-direction: column;
     gap: 10px;
   }
@@ -244,5 +244,5 @@ form{
   h1 {
     font-size: 1.2rem;
     text-align: center;
-  } */
+  }
 }
