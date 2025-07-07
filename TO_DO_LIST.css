@@ -197,3 +197,44 @@ form{
   gap: 10px;
 }
 
+
+@media (max-width: 778px){
+  .container{
+    height: 90%;
+    width: 90%;
+  }
+}
+@media (max-width: 600px){
+  .container{
+    height: 90%;
+    width: 90%;
+  }
+ 
+}
+
+@media (max-width: 551px){
+  .container{
+    height: 90%;
+    width: 90%;
+  }
+  .numbers{
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 460px){
+  .container{
+    height: 90%;
+    width: 90%;
+  }
+ 
+} 
+
+@media (max-width: 397px){
+  .container{
+    height: 90%;
+    width: 90%;
+  }
+ 
+} 
