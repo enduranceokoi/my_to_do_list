@@ -110,6 +110,7 @@ button:hover {
 
 ul {
   list-style: none;
+  width: 100%;
 }
 
 li {
@@ -289,6 +290,7 @@ form{
     border-radius: 8px;
     font-size: 1.5rem;
   }
+ 
 
   h1 {
     font-size: 1.2rem;
