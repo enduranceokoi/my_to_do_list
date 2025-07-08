@@ -89,6 +89,24 @@ function renderTask(text, completed = false) {
   // 🔼 Add new tasks at the top
   const taskList = document.getElementById("taskList");
   taskList.insertBefore(li, taskList.firstChild);
+
+
+  li.addEventListener('mouseenter', function() {
+  this.classList.add('div');
+
+  let selet = document.createElement('div');
+  selet.className = 'mouseenter-elet';
+  selet.innerHTML = text;
+  this.appendChild(selet);
+});
+
+li.addEventListener('mouseleave', function() {
+  const element = this.querySelector('.mouseenter-elet');
+  if (element) {
+    element.remove();
+  }
+});
+
 };
 
 
